@@ -1,6 +1,6 @@
 {
   "name": "fixed-vue3-json-viewer",
-  "version": "1.0.0",
+  "version": "1.0.1",
   "description": "Fixed vue3-json-viewer",
   "main": "dist/bundle.cjs.js",
   "module": "dist/bundle.esm.js",
@@ -24,7 +24,7 @@
   "bugs": {},
   "repository": {
     "type": "git",
-    "url": "git+https://github.com/qiuquanwu/vue3-json-viewer"
+    "url": "git+https://github.com/matteodedonno02/vue3-json-viewer"
   },
   "devDependencies": {
     "@babel/core": "^7.11.1",
