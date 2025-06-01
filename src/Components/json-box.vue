@@ -71,7 +71,7 @@ export default {
     } else if (typeof this.value === "function") {
       dataType = JsonFunction;
     }
-    if (this.value.constructor === RegExp) {
+    if (this.value?.constructor === RegExp) {
       // console.log("type", this.value.constructor === RegExp);
       // this.value=this.value.toString()
       dataType = JsonRegexp;
@@ -145,15 +145,19 @@ export default {
 .jv-node {
   position: relative;
 }
+
 .jv-node:after {
   content: ",";
 }
+
 .jv-node:last-of-type:after {
   content: "";
 }
+
 .jv-node.toggle {
   margin-left: 13px !important;
 }
+
 .jv-node .jv-node {
   margin-left: 25px;
 }
