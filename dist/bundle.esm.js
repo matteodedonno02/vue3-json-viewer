@@ -537,7 +537,7 @@ var script$1 = {
         }
     },
     render: function render() {
-        var _this = this;
+        var _this$value, _this = this;
         var elements = [];
         var dataType;
         if (this.value === null || this.value === undefined) {
@@ -557,7 +557,7 @@ var script$1 = {
         } else if (typeof this.value === 'function') {
             dataType = script$4;
         }
-        if (this.value.constructor === RegExp) {
+        if (((_this$value = this.value) === null || _this$value === void 0 ? void 0 : _this$value.constructor) === RegExp) {
             dataType = script$2;
         }
         var complex = this.keyName && this.value && (Array.isArray(this.value) || _typeof(this.value) === 'object' && Object.prototype.toString.call(this.value) !== '[object Date]');
